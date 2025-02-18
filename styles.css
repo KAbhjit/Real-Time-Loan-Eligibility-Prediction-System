@@ -1,0 +1,66 @@
+/* styles.css */
+html, body {
+    height: 100%;  /* Ensure the full height of the viewport is used */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f7f6;
+    display: flex;
+    justify-content: flex-start; /* Align the content to the top */
+    align-items: flex-start; /* Align the content to the top */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+body {
+    display: flex;
+    flex-direction: column;  /* Make the body flex column-wise */
+    justify-content: flex-start;
+    align-items: center; /* Center the content horizontally */
+    padding-top: 20px; /* Ensure the page starts from top */
+}
+
+.container {
+    width: 90%;  /* Make it responsive */
+    max-width: 1000px;  /* Limit the max width */
+    padding: 2em;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-top: 20px; /* Ensure there's a gap from the top */
+    overflow: visible; /* Allow content to be visible if it overflows */
+    box-sizing: border-box; /* Ensures padding is included in the width and height */
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+form {
+    display: grid;  /* Use CSS Grid */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Create responsive columns */
+    gap: 15px; /* Space between the fields */
+    margin-bottom: 20px; /* To ensure space between fields */
+}
+
+input, button {
+    margin: 0.5em 0;
+    padding: 1em;
+    font-size: 1em;
+    width: 100%; /* Ensure inputs take full column width */
+}
+
+button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: hwb(123 27% 37%);
+}
+
+#results {
+    text-align: center;
+    margin-top: 1em;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Eligibility & Recommendation</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Loan Eligibility and Recommendation System</h1>
+        <form id="loanForm">
+            <!-- Input fields for required features -->
+            <input type="number" name="RiskScore" placeholder="Risk Score" required>
+            <input type="number" name="AnnualIncome" placeholder="Annual Income" required>
+            <input type="number" name="TotalDebtToIncomeRatio" placeholder="Total Debt to Income Ratio" required>
+            <input type="number" name="InterestRate" placeholder="Interest Rate" required>
+            <input type="number" name="LoanAmount" placeholder="Loan Amount" required>
+            <input type="number" name="NetWorth" placeholder="Net Worth" required>
+            <input type="number" name="BaseInterestRate" placeholder="Base Interest Rate" required>
+            <input type="number" name="MonthlyLoanPayment" placeholder="Monthly Loan Payment" required>
+            <input type="number" name="LoanDuration" placeholder="Loan Duration" required>
+            <input type="number" name="LengthOfCreditHistory" placeholder="Length of Credit History" required>
+            <input type="number" name="CreditScore" placeholder="Credit Score" required>
+            <input type="text" name="EducationLevel" placeholder="Education Level" required>
+            <input type="number" name="Experience" placeholder="Experience" required>
+            <input type="number" name="Age" placeholder="Age" required>
+            <input type="text" name="BankruptcyHistory" placeholder="Bankruptcy History" required>
+            <input type="number" name="PreviousLoanDefaults" placeholder="Previous Loan Defaults" required>
+            <input type="number" name="MonthlyDebtPayments" placeholder="Monthly Debt Payments" required>
+            <input type="number" name="CheckingAccountBalance" placeholder="Checking Account Balance" required>
+            <input type="number" name="CreditCardUtilizationRate" placeholder="Credit Card Utilization Rate" required>
+            <input type="number" name="TotalLiabilities" placeholder="Total Liabilities" required>
+            <input type="number" name="UtilityBillsPaymentHistory" placeholder="Utility Bills Payment History" required>
+            <input type="text" name="PaymentHistory" placeholder="Payment History" required>
+            <input type="number" name="SavingsAccountBalance" placeholder="Savings Account Balance" required>
+            <input type="text" name="EmploymentStatus" placeholder="Employment Status" required>
+            <input type="number" name="NumberOfCreditInquiries" placeholder="Number of Credit Inquiries" required>
+            <input type="number" name="NumberOfOpenCreditLines" placeholder="Number of Open Credit Lines" required>
+            <input type="number" name="NumberOfDependents" placeholder="Number of Dependents" required>
+            <!-- Submit button to trigger loan eligibility and recommendation check -->
+            <button type="button" onclick="submitForm()">Check Eligibility & Recommendation</button>
+        </form>
+        <div id="results">
+            <h2>Results:</h2>
+            <p id="eligibilityResult"></p>
+            <p id="recommendationResult"></p>
+        </div>
+    </div>
+    <script src="/static/app.js"></script>
+</body>
+</html>
